@@ -2,7 +2,15 @@
 @import url("https://cdn.linearicons.com/free/1.0.0/icon-font.min.css");
 body {
   font-family: 'Montserrat', sans-serif;
-  background: #112233;
+  background: #fff;
+  color:#fff;
+}
+.condition {
+    color: #fff;
+}
+
+.time {
+    color: #fff;
 }
 
 .weather-card {
@@ -18,7 +26,7 @@ body {
   height: 570px;
   width: 100%;
   overflow: hidden;
-  background: url("https://s-media-cache-ak0.pinimg.com/564x/cf/1e/c4/cf1ec4b0c96e59657a46867a91bb0d1e.jpg") no-repeat;
+  background: url("images/wallpaper.jpeg") no-repeat;
   background-size: cover;
   background-position: center center;
   text-align: center;
@@ -105,7 +113,7 @@ body {
 }
 .weather-card .bottom .wrapper .forecast a {
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 .weather-card .bottom .wrapper .forecast .go-up {
   text-align: center;

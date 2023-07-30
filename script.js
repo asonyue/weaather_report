@@ -1,4 +1,3 @@
-
 $(document).ready(function () {
 
     // Set the API endpoint URL
@@ -28,22 +27,13 @@ $(document).ready(function () {
 
             var currentCondition = data.current.condition.text;
             // Both methods will return a single element
-            $('.heading').html(currentCondition);
+            $('.condition').html(currentCondition);
 
-            if (currentCondition.toLowerCase().includes("sun")) {
-                // Set the background image to a rainy image
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/sunny.jpeg')";
-            } else if (currentCondition.toLowerCase().includes("cloud")) {
-                // Set the background image to a default image
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/cloudy.jpeg')";
-            } else if (currentCondition.toLowerCase().includes("rain")) {
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/rain.jpeg')";
-            }
+            var time = data.location.localtime;
+            $('.time').html(time);
 
             var forecastDays = data.forecast.forecastday;
-
-            // Loop through the forecastday array and create a div element for each day
-            for (var i = 0; i < 3; i++) {
+            
                 // Get the forecastday array from the API response
                 var forecastDays = data.forecast.forecastday;
 
@@ -56,7 +46,7 @@ $(document).ready(function () {
 
                 // Update the temperature for two days from now
                 twoDaysTempElement.innerHTML = forecastDays[2].day.avgtemp_c.toFixed(1) + '<span class="deg"></span><span class="temp-type">°C</span>';
-            }
+            
         },
         error: function () {
             $('#temperature').html('Error: API request failed');
