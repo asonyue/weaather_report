@@ -2,7 +2,7 @@
 $(document).ready(function () {
 
     // Set the API endpoint URL
-    var endpoint = 'http://api.weatherapi.com/v1/forecast.json';
+    var endpoint = 'https://api.weatherapi.com/v1/forecast.json';
 
 
     // Set the API parameters
