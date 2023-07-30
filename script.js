@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // Set the API parameters
     var params = {
-        q: 'Philadelphia', // City name
+        q: '19122', // City name
         key: 'eb23c3da5e204fdc9b5224506232907', // Your API key
         days: 3
     };
@@ -19,7 +19,7 @@ $(document).ready(function () {
         dataType: 'json',
         data: params,
         success: function (data) {
-            var location = data.location.country;
+            var location = data.location.name;
             $('.location').html(location);
             // Extract the temperature from the API response
             var temp_c = data.current.temp_c.toFixed(1);
