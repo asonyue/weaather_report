@@ -32,12 +32,12 @@ $(document).ready(function () {
 
             if (currentCondition.toLowerCase().includes("sun")) {
                 // Set the background image to a rainy image
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('sunny.jpeg')";
+                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/sunny.jpeg')";
             } else if (currentCondition.toLowerCase().includes("cloud")) {
                 // Set the background image to a default image
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('cloudy.jpeg')";
+                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/cloudy.jpeg')";
             } else if (currentCondition.toLowerCase().includes("rain")) {
-                document.querySelector(".weather-card .top").style.backgroundImage = "url('rain.jpeg')";
+                document.querySelector(".weather-card .top").style.backgroundImage = "url('images/rain.jpeg')";
             }
 
             var forecastDays = data.forecast.forecastday;
