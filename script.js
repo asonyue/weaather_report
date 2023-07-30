@@ -7,7 +7,7 @@ $(document).ready(function () {
 
     // Set the API parameters
     var params = {
-        q: 'Hong Kong', // City name
+        q: 'Philadelphia', // City name
         key: 'eb23c3da5e204fdc9b5224506232907', // Your API key
         days: 3
     };
